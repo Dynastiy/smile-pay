@@ -1,0 +1,65 @@
+    @media (max-width: 990px) {
+        .prices {
+            grid-template-columns: auto;
+            gap: var(--spacer);
+            margin-top: 50px;
+        }
+        /* .hero--section {
+            height: ;
+        } */
+        .container {
+            padding: 0.3rem 1rem;
+        }
+        .amount--container {
+            grid-template-columns: auto;
+        }
+        .main--btn {
+            padding: 0.5rem 0.9rem;
+        }
+        .login--box {
+            width: 90%;
+        }
+        .main--app--drawer {
+            left: -1000px;
+            z-index: 999;
+        }
+        .main--app--drawer.active {
+            left: 0;
+        }
+        #main--dashboard {
+            margin-left: 0;
+            padding: 0.8rem 1rem;
+        }
+        #dashboard--header {
+            margin-left: 0;
+            padding: 0.8rem 1rem;
+        }
+        #side-bar {
+            width: 70%;
+        }
+        .menu--open {
+            display: block;
+        }
+        .menu--close {
+            display: block;
+        }
+        .analytics {
+            grid-template-columns: auto;
+            grid-gap: 20px;
+        }
+        .single__user {
+            display: unset;
+        }
+        .right__side {
+            margin-top: 0.8rem;
+        }
+        .payment-modal-content {
+            width: 80%;
+        }
+        .social--media {
+            display: unset;
+        }
+        .social--media .social {
+            margin-top: 1.2rem;
+        }
+    }
