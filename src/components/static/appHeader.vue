@@ -22,7 +22,7 @@
           </div>
           <div  style="height:20px; width:1px; background-color:#A7B3CA">
           </div>
-          <div class="nav--item d-flex align-items-center" style="gap:3px">
+          <div class="nav--item d-flex align-items-center" style="gap:3px"  role="button">
             <span class="active--icon">
             </span>
             <span class="inactive--icon">

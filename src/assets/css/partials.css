@@ -86,10 +86,6 @@ label {
     padding: 0 !important;
 }
 
-body {
-    /* background-color: var(--accent-color); */
-}
-
 body.active {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999;
