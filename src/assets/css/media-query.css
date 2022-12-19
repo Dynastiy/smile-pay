@@ -1,0 +1,36 @@
+    @media (max-width: 990px) {
+        .main--auth {
+            width: 100%;
+        }
+        .main--content {
+            height: auto;
+            background-color: #fff;
+            width: 100%;
+            border: unset;
+            box-shadow:unset;
+            position: relative;
+        }
+       
+        #main--content {
+            margin-left: 0px;
+        }
+
+        .main--container {
+            padding: 0rem;
+            height: auto;
+            overflow-y: auto;
+            margin-bottom: 4rem;
+        }
+
+        .container--fluid {
+            padding: 1.3rem !important;
+        }
+
+        .send--options .wallet {
+            width: 100% !important;
+        }
+
+        .dashboard--content {
+            height: unset !important;
+        }
+    }

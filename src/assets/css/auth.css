@@ -1,0 +1,93 @@
+.auth--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.auth--content {
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    box-shadow: 80px -90px 100px rgba(0, 0, 255, 0.02), -80px 90px 80px rgba(255, 0, 0, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.main--auth {
+    width: 500px;
+}
+
+.auth--form {
+    border: 1px dashed rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.input,
+.main--auth select {
+    background-color: var(--tertiary-color);
+    display: block;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.auth--form input::placeholder {
+    font-size: 0.8rem;
+    color: #5e5e5e;
+}
+
+.password--input_field input {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    color: #333;
+}
+
+.password--input_field input::placeholder {
+    font-size: 0.8rem;
+    color: #5e5e5e;
+}
+
+.password--input_field {
+    background-color: var(--tertiary-color);
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.vue-pincode-input-wrapper {
+    display: flex !important;
+    justify-content: center;
+}
+
+.vue-pincode-input {
+    max-width: unset !important;
+    width: 100% !important;
+    height: 80px;
+    background-color: var(--tertiary-color);
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 35px !important;
+    border-radius: 10px !important;
+}
+
+.vue-pincode-input::placeholder {
+    color: var(--tertiary-color);
+}

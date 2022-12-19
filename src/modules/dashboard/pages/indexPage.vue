@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <div>
+            <div>
+                <h2>Home</h2>
+            </div>
+        </div>
+    </div>
+</template>

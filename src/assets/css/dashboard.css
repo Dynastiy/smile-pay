@@ -1,0 +1,196 @@
+.main--container {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100vh;
+    padding: 0 4rem;
+    overflow-y: hidden;
+    /* margin-top: ; */
+}
+
+.main--content {
+    height: 80vh;
+    background-color: #fff;
+    width: 100%;
+    border: 1px dashed var(--accent);
+    z-index: 999;
+    box-shadow: 80px -90px 100px rgba(0, 0, 255, 0.02), -80px 90px 80px rgba(255, 0, 0, 0.02);
+    position: relative;
+}
+
+.app--drawer {
+    width: 200px;
+    border-right: 1px dashed var(--accent);
+    height: 80vh;
+    position: fixed;
+}
+
+.app--nav {
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+}
+
+#main--content {
+    margin-left: 200px;
+}
+
+.app--drawer ul li a span {
+    font-weight: 400;
+    color: var(--accent-color-dark);
+    font-size: 13px;
+}
+
+.app--drawer ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.3rem 1.2rem;
+    position: relative;
+}
+
+.app--drawer ul li .router-link-exact-active span {
+    color: var(--secondary-color);
+}
+
+.app--drawer ul li .router-link-exact-active::before {
+    content: " ";
+    width: 4px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+    /* background-color: var(--cover); */
+}
+
+.app--drawer ul li .router-link-exact-active::after {
+    content: " ";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 20px;
+    border-radius: 15px;
+    background-color: var(--cover-light);
+}
+
+
+/* Transfers  */
+
+.el-radio-group label {
+    margin-bottom: 0;
+}
+
+.el-radio-group label .el-radio-button__inner {
+    font-size: 14px;
+    padding: 8px 15px;
+    font-weight: 400;
+    border: 1px solid #DAE1ED !important;
+}
+
+.el-radio-group label .el-radio-button__inner a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--accent-color-dark);
+}
+
+.el-radio-group label .el-radio-button__inner .router-link-exact-active {
+    color: var(--secondary-color);
+}
+
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background-color: transparent !important;
+    border-color: var(--accent) !important;
+    box-shadow: none !important;
+}
+
+.send--options button {
+    background: transparent;
+    border: 1px solid var(--accent);
+    padding: 1.3rem 2rem;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--accent-color-dark);
+    font-weight: 400;
+}
+
+.send--options button.active {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.send--options {
+    margin-right: 0px;
+    /* display: flex; */
+}
+
+.send--options.collapsed {
+    margin-right: 400px;
+    flex-wrap: wrap;
+}
+
+.send--options_view {
+    transition: all 0.5s ease;
+    opacity: 0;
+    width: 0px;
+    pointer-events: none;
+    position: relative;
+}
+
+.send--options_view.collapsed {
+    transition: all 0.5s ease;
+    opacity: 1;
+    width: 400px;
+    min-height: 100%;
+    border-left: 1px dashed var(--accent);
+    position: absolute;
+    /* overflow-y: auto; */
+    height: calc(80vh - 2rem - 20px);
+    top: 0;
+    right: 0;
+    pointer-events: all;
+}
+
+.send--funds {
+    position: relative;
+    background-color: transparent;
+    /* z-index: -999; */
+    /* height: 0vh; */
+    height: calc(80vh - 2rem - 20px);
+}
+
+.send--options_view .close {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    font-size: 13px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background: #fff;
+}
+
+.collapsible--content {
+    min-height: 100%;
+    overflow-y: auto;
+    height: calc(80vh - 2rem - 20px);
+}
+
+.collapsible--content2 {
+    /* min-height: 100%; */
+    overflow-y: auto;
+    height: calc(70vh - 2rem - 20px);
+    padding: 1rem 0.4rem;
+}
+
+.dashboard--content {
+    height:75vh;
+    overflow-y: auto;
+}

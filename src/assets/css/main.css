@@ -1,0 +1,206 @@
+@import url('@/assets/css/partials.css');
+.modal--mask {
+    background-color: var(--cover);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.modal--content {
+    background-color: #fff;
+    width: 35%;
+    padding: 2.5rem 3.5rem;
+    border-radius: 10px;
+}
+
+
+.smile--form input,
+.smile--form textarea,
+.smile--form select, t{
+    background-color: var(--tertiary-color);
+    width: 100%;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    color: var(--accent-color-dark);
+    outline: none;
+    display: block;
+}
+
+.smile--form input::placeholder,
+.smile--form textarea::placeholder,
+
+.smile--form22 input::placeholder,
+.smile--form22 textarea::placeholder{
+    color: #5e5e5e;
+}
+
+.smile--form #with-flag, .smile--form22 #with-flag {
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.smile--form .input--with_flag select {
+    background-color: transparent;
+    padding: 0;
+    width: max-content;
+    border-radius: 0;
+}
+
+.smile--form .input--with_flag select#with-flag {
+    background-color: transparent;
+    padding: 0.1rem 0.4rem;
+    width: max-content;
+    border-radius: 0;
+}
+
+.smile--form .input--with_flag label {
+    font-size: 0.7rem;
+    color: #5e5e5e;
+    font-weight: 300;
+    margin: 0;
+}
+
+.smile--form .input--with_flag {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    border: none;
+    padding: 0.5rem 1rem 0.8rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    color: var(--accent-color-dark);
+}
+
+.p2p--receive .smile--tag {
+    background-color: var(--tertiary-color);
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+.p2p--receive input {
+    width: 100%;
+    display: block;
+    padding: 0.6rem 1rem;
+    border: transparent;
+    background: transparent;
+    font-size: 1.4rem;
+    outline: none;
+    text-align: center;
+}
+
+
+/* Exchanges  */
+
+.app--exchange {
+    position: relative;
+    height: calc(80vh - 0.2rem);
+}
+
+.exchange--money {
+    margin-right: 400px;
+}
+
+.exchange--rates {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    border-left: 1px dashed var(--accent);
+    height: 100%;
+}
+
+.select--currency select {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    outline: none;
+}
+
+.amount--to_exchange label {
+    display: block;
+    color: var(--text-inactive);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.amount--to_exchange input,
+.amount--to_exchange select {
+    display: block;
+    outline: transparent;
+    font-size: 0.9rem;
+    border: transparent;
+    outline: transparent;
+    font-size: 1.1rem;
+}
+
+.amount--to_exchange input {
+    width: 100%;
+}
+
+.amount--to_exchange select {
+    width: max-content;
+}
+
+.amount--to_exchange {
+    border: 1px solid var(--tertiary-color);
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.3rem 0.7rem 0.6rem 0.7rem;
+}
+.exchange--money .smile--form select {
+    padding: 1.4rem;
+}
+
+/* Wallet  */
+
+.wallet--card {
+    background-color: var(--accent-color-dark);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.wallet--information h6 {
+    font-weight: 400;
+    color: var(--text-inactive);
+}
+
+.wallet--information,
+.wallet--headings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wallet--information h6,
+.wallet--headings h6 {
+    font-size: 13px;
+}
+
+.virtual--accounts {
+    background: url("../img/accounts-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.virtual--accounts .top--accounts_data span, .virtual--accounts .bottom--accounts_data span  {
+    font-size: 14px;
+    color: #fff;
+}

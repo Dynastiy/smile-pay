@@ -1,0 +1,48 @@
+<template>
+  <div>
+    <div>
+      <div class="container--fluid">
+        <div class="d-flex send--options flex-wrap" style="gap: 20px">
+          Virtual Accounts
+        </div>
+
+        <div
+          class="d-flex align-items-center mt-3"
+          style="gap: 5px; color: var(--secondary-color); font-size: 12px"
+          role="button"
+          @click="$router.push('/create-virtual-account')"
+        >
+          <span> <i-icon icon="ci:plus-circle" /> </span>
+          <span>Create Virtual Account</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapActions, mapState } from "vuex";
+
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState("auth", {
+      user: (state) => state.user,
+    }),
+
+    ...mapState("virtualAccounts", {
+      wallets: (state) => state.dataSet,
+    }),
+  },
+
+  beforeMount() {
+    this.list(this.user.account_id);
+  },
+
+  methods: {
+    ...mapActions("virtualAccounts", ["list"]),
+  },
+};
+</script>
